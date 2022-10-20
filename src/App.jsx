@@ -4,6 +4,7 @@ import LandingPage from './landingPage';
 import {  BrowserRouter as Router,Link,Routes,Route} from "react-router-dom";
 import Login from "./pages/login.jsx";
 import SignUp from "./pages/signUp.jsx"
+import Dashboard from './pages/dashboard';
 // import { app,auth } from "../firebase"
 // import { signInWithEmailAndPassword } from "firebase/auth"
 
@@ -19,7 +20,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<LandingPage/>
                 }/>
-                    <Route path="/login" element={<Login/>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/dashboard" element={<Dashboard/>}/>
                 <Route path="/signUp" element={<SignUp/>}/>
                 </Routes>
         

@@ -1,8 +1,10 @@
 import React,{useState} from 'react'
 import "./login.css"
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword ,GoogleAuthProvider,signInWithPopup,FacebookAuthProvider} from "firebase/auth";
 import { app,auth } from "../../firebase"
 import {  BrowserRouter as Router,Link,Routes,Route, redirect} from "react-router-dom";
+// import {  } from "firebase/auth";
+
 
 function login() {
 
@@ -11,6 +13,61 @@ function login() {
   const [password,setPassword]=useState("")
 
   const auth = getAuth();
+  const provider = new GoogleAuthProvider();
+  const providerFB = new FacebookAuthProvider();
+
+//continue with FaceBook
+const facebookLogin=()=>{
+    signInWithPopup(auth, providerFB)
+  .then((result) => {
+    // The signed-in user info.
+    const user = result.user;
+
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    const credential = FacebookAuthProvider.credentialFromResult(result);
+    const accessToken = credential.accessToken;
+
+    console.log(user)
+    // ...
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = FacebookAuthProvider.credentialFromError(error);
+    console.log(error)
+    // ...
+  });
+}
+  //continue with google
+  const googleLogin=()=>{
+  signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    // The signed-in user info.
+    const user = result.user;
+
+    // ...
+    console.log(user)
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+    console.log(error)
+  });
+  }
+
+  //Email and Password Login
     const LogIn=async (auth,email,password)=>{await signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
         // Signed in 
@@ -21,6 +78,7 @@ function login() {
     .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        console.log(errorCode,errorMessage)
     })
     
     }
@@ -36,6 +94,7 @@ function login() {
 
                 </div>
                 </Link>
+                
             <div className="loginDiv">
             
                 <div className="header">
@@ -44,12 +103,12 @@ function login() {
                 
                 <div className="credentials">
                     <div className="inputs3">
-                        <div className='Google'>
-                            SignIn with Google?
-                        </div>
-                        <div className='facebook'>
-                            SignIn with Facebook?
-                        </div>
+                        <button className='Google' onClick={()=>{googleLogin()}}>
+                            Continue with Google?
+                        </button>
+                        <button className='facebook' onClick={()=>{facebookLogin()}}>
+                            Continue with Facebook?
+                        </button>
                     </div>
                     <div className="inputs1">
                         <div className="Head">
