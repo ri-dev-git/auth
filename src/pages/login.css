@@ -25,7 +25,8 @@
     justify-content: flex-start;
   
    }
-   .logLink{text-decoration: none;}
+   .logLink{text-decoration: none;
+  color: black;}
    .back{
     height: 10%;
     width: 20%  ;
@@ -33,8 +34,8 @@
     position: absolute;
     /* border: 1px solid; */
     cursor: pointer;
-    left: 5%;
-    top:6%;
+    left: 3%;
+    top:7%;
    }
   
     .loginDiv{
@@ -125,7 +126,7 @@
   .Google{
     height:45% ;
     width: 100%;
-    
+    border:0;
     background: red;
     color: white;
     font-size: 15px;
@@ -141,6 +142,7 @@
   }
   .facebook{
     height:45% ;
+    border:0;
     width: 100%;
     
     background: rgb(103, 103, 229);
@@ -178,7 +180,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-        /* border: #1f1f1f solid 1px; */
+        border: #1f1f1f solid0 1px;
   }
   .logInButt{
     display: flex;

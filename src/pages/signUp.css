@@ -1,0 +1,295 @@
+.loginBack{
+    height: 10%;
+    width: 20%  ;
+    font-size: 20px;
+    position: absolute;
+    /* border: 1px solid; */
+    cursor: pointer;
+    left: 3%;
+    top:10%;
+}
+.SignUpDiv{
+
+    background-color: rgba(255, 255, 255, .11);  
+    backdrop-filter: blur(5px);
+/* border: 1px solid; */
+height: 80%;
+width: 60%;
+margin-top: 3%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+border-radius: 10px;
+/* background: rgba(255, 255, 255, .15); */
+/* background-color: white; */
+}
+
+.signUpChild{
+    width:100%;
+    height: 65%;
+    /* border: 1px solid; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row;
+}
+.sUpCredentials{
+    width: 50%;
+    height: 100%;
+    /* border:1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;   
+}
+
+.sibling{
+    /* border:1px solid;    */
+    height: 100%;
+    width: 50%;
+}
+
+.profilePicParent{
+    /* border:1px solid; */
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.profilePicChild1{
+    /* border:1px solid; */
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+.profilePicDiv{
+    height: 100%;
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avatar{
+    height: 150px;
+    width:150px;
+
+    border-radius: 50%;
+}
+
+.fileDiv{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fileDiv input{
+    width: 90%;
+    height: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=file]::file-selector-button {
+    border: 0px solid #6c5ce7;
+    padding: .2em .4em;
+    height: 50px;
+    border-radius: .2em;
+    background:white;
+    transition: 1s;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: black;
+    color:white
+  }
+
+.UploadDiv{
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.UploadDiv button{
+    height: 50%;
+    width: 50%;
+    border-radius:12px;
+    border:0;
+    cursor: pointer;
+    transition:0.8s;
+}
+.UploadDiv button:hover{
+    background: black;
+    color:white
+}
+.nameParent{
+    height: 50%;
+    width: 100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nameChild1{
+    height: 50%;
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.firstName{
+ /* border:1px solid; */
+ width: 100%;
+height: 16%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.fNInp{
+    height: 84%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fNInp input{
+    /* border:0px solid;    */
+    height: 80%;
+    width: 95%;
+    padding-left: 5%;
+    color: black;
+        
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius:5px ;
+    background: rgba(255, 255, 255, .5);
+
+}
+.credSib1{
+    height: 50%;
+    width:100%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.signUPHead{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 10%;
+    padding-top: 0.5%;
+    padding-left:5.5%;
+  margin-bottom: 5%;
+}
+.signUPinputDiv{
+    /* border: 1px solid; */
+    height: 50%;
+    width: 100%;
+}
+.signUPinputs1{
+  /* border:1px solid; */
+  display: flex;
+  /* margin-top: 1% ; */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+  width: 95%;
+  padding: 0%;
+}
+.signUPinputs2{
+/* border:1px solid; */
+display: flex;
+/* margin-top: 1% ; */
+align-items: center;
+flex-direction: column;
+justify-content: center;
+height: 50%;
+width: 95%;
+padding: 0%;
+} 
+.signUPinputs3{
+/* border:13px solid; */
+display: flex;
+/* margin-top: 1% ; */
+align-items: center;
+flex-direction: column;
+justify-content: space-around;
+height: 100%;
+width: 95%;
+padding: 0%;
+}
+.signUPGoogle{
+    /* margin-bottom: 2%;w */
+height:35% ;
+width: 100%;
+border:0;
+background: red;
+color: white;
+font-size: 15px;
+border-radius: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: 0.5s;
+}
+.signUPGoogle:hover{
+transform: scale(1.05);
+}
+.signUPfacebook{
+height:35% ;
+border:0;
+width: 100%;
+
+background: rgb(103, 103, 229);
+color: white;
+font-size: 15px;
+border-radius: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+transition: 0.5s;
+}
+.signUPfacebook:hover{
+transform: scale(1.05);
+}
+
+.signUPcred{
+border:0px solid;   
+height: 100%;
+width: 95%;
+padding-left: 5%;
+color: black;
+    
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+font-weight: 600;
+border-radius:5px ;
+background: rgba(255, 255, 255, .5);
+}
