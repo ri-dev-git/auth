@@ -1,0 +1,213 @@
+.App{
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    height:100%;
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right top, #ff9f1a, #ff932e, #ff873e, #ff7c4c, #ff7358, #fd765d, #fc7a63, #fa7d68, #f68b6b, #f19971, #eda579, #e8b084);
+  }
+  
+  .body{
+    /* border:1px solid red; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    flex-direction:column;
+    justify-content: flex-start;
+  
+   }
+   .logLink{text-decoration: none;}
+   .back{
+    height: 10%;
+    width: 20%  ;
+    font-size: 20px;
+    position: absolute;
+    /* border: 1px solid; */
+    cursor: pointer;
+    left: 5%;
+    top:6%;
+   }
+  
+    .loginDiv{
+        background-color: rgba(255, 255, 255, .11);  
+        backdrop-filter: blur(5px);
+    /* border: 1px solid; */
+    height: 80%;
+    width: 30%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 10px;
+    /* background: rgba(255, 255, 255, .15); */
+    /* background-color: white; */
+  }
+  .header{
+      /* border: 1px solid; */
+      width: 100%;
+      height: 10%;
+      /* padding-top: 2%; */
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      font-size: 20px;
+  
+  }
+  .credentials{
+      /* border: 1px solid;  */
+      width: 90%;
+      height: 60%;
+  
+      display: flex;
+      justify-content: space-around;
+      align-items:center ;
+      flex-direction: column;
+    }
+    .Head{
+        /* border: 1px solid; */
+        width: 100%;
+        height: 10%;
+        padding-top: 0.5%;
+        padding-left:5.5%;
+      margin-bottom: 5%;
+    }
+    .inputDiv{
+        /* border: 1px solid; */
+        height: 50%;
+        width: 100%;
+    }
+  .inputs1{
+      /* border:1px solid; */
+      display: flex;
+      /* margin-top: 1% ; */
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 30.33%;
+      width: 95%;
+      padding: 0%;
+  }
+  .inputs2{
+    /* border:1px solid; */
+    display: flex;
+    /* margin-top: 1% ; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 30.33%;
+    width: 95%;
+    padding: 0%;
+} .inputs3{
+    /* border:1px solid; */
+    display: flex;
+    /* margin-top: 1% ; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30.33%;
+    width: 95%;
+    padding: 0%;
+}
+  .Google{
+    height:45% ;
+    width: 100%;
+    
+    background: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+  .Google:hover{
+   transform: scale(1.05);
+  }
+  .facebook{
+    height:45% ;
+    width: 100%;
+    
+    background: rgb(103, 103, 229);
+    color: white;
+    font-size: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+  .facebook:hover{
+    transform: scale(1.05);
+   }
+
+  .cred{
+    border:0px solid;   
+    height: 100%;
+    width: 95%;
+    padding-left: 5%;
+    color: black;
+        
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius:5px ;
+    background: rgba(255, 255, 255, .5);
+  }
+  
+  .btnDiv{
+    height: 25.0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+        /* border: #1f1f1f solid 1px; */
+  }
+  .logInButt{
+    display: flex;
+    justify-content:center ;
+    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+  }
+  .btn{
+    margin-top: 5%;
+    height: 70%;
+    width: 40%;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    
+    font-size: 20px;
+    transition: 500ms;
+  }
+  .btn:hover{
+    background-color: #1f1f1f;
+    color: white;
+  }
+
+.signUpLink{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}

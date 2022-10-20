@@ -1,41 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.App{
+  /* border: 1px solid red; */
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  height:100%;
+  width: 100%;
+  padding: 0;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(to right top, #ff9f1a, #ff932e, #ff873e, #ff7c4c, #ff7358, #fd765d, #fc7a63, #fa7d68, #f68b6b, #f19971, #eda579, #e8b084);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.nav{
+  /* border:1px solid;  */
+  height: 12%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .11);  
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
-
-.card {
-  padding: 2em;
+.empty{
+  width: 33.33%;
 }
+.logo{
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginDiv1{
+  height: 100%;
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginLink{
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginButton{
+  height: 50%;
+  width: 25%;
 
-.read-the-docs {
-  color: #888;
+  cursor: pointer;
+  font-size: 15px;
+  border: 0;
+  border-radius:12px ;
+  transition: 0.75s;
+
+}
+.loginButton:hover{
+  background: black;
+  color: white;
+  transform: scale(1.2);
+
+  border: 0;
+}
+.homepage{
+  height: 88%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
